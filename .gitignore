@@ -50,4 +50,4 @@ app.*.symbols
 /android/app/release
 
 # Local packages
-/packages
+/package

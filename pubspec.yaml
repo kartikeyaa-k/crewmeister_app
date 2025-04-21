@@ -9,9 +9,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  crewmeister_core:
-    path: ./packages/crewmeister_core
   get_it: 8.0.3
+
+  # Local pacakges will be moved to git
+  crewmeister_core:
+    path: ./package/crewmeister_core
+  absence_manager:
+    path: ./package/absence_manager
+
+  
 
 dev_dependencies:
   flutter_test:
