@@ -19,6 +19,8 @@ class CrewmeisterApp extends StatelessWidget {
       locale: const Locale('en'),
       home: MultiBlocProvider(
         providers: [
+          BlocProvider(create: (_) => AbsenceFilterCubit()),
+
           BlocProvider(
             create: (_) {
               final cubit = locator<AbsenceCubit>();
