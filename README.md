@@ -95,8 +95,11 @@ flutter run -t lib/main.dart --dart-define=BASE_URL=https://absence-manager-api-
 ```bash
 flutter test
 ```
-Widget and Unit tests are written in  [`absence_manager`](../absence_manager) and [`crewmeister_core`](../crewmeister_core)
-Unit test coverage for cubit and other logic is at 100%
+
+Please note : 
+1. Widget and Unit tests are written in  [`absence_manager`](../absence_manager) and [`crewmeister_core`](../crewmeister_core)
+2. Unit test coverage for cubit and other logic is at 100%
+
 ---
 
 ## 🧩 Project Modules
@@ -117,6 +120,7 @@ This app depends on the following packages:
 - Tested state management using `bloc_test`
 - Member name mapping with absences handled on server side
 - Lint rules
+- Zero dart analyze issues.
 - Test cases
 - Githooks - missing
 - PR rules - missing
