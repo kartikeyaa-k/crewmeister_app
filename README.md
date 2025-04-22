@@ -2,6 +2,7 @@
 
 The central entrypoint for the Crewmeister application.
 This Flutter app ties together all internal packages—including absence_manager as the feature module and crewmeister_core for shared utilities—to deliver a modular, high-performance, and well-architected solution.
+
 ---
 
 ## 📂 Folder Structure
