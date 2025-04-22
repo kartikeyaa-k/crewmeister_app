@@ -14,8 +14,8 @@ class CrewmeisterApp extends StatelessWidget {
     return MaterialApp(
       title: 'Crewmeister Absence Manager',
       debugShowCheckedModeBanner: false,
-      theme: appLightTheme, // from core package
-      darkTheme: appDarkTheme, // from core package
+      theme: appLightTheme,
+      darkTheme: appDarkTheme,
       locale: const Locale('en'),
       home: MultiBlocProvider(
         providers: [
@@ -29,7 +29,7 @@ class CrewmeisterApp extends StatelessWidget {
             },
           ),
         ],
-        child: const AbsenceListPage(), // from feature package
+        child: const AbsenceListPage(),
       ),
     );
   }

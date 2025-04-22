@@ -6,7 +6,7 @@ import 'package:absence_manager/absence_manager.dart';
 final GetIt locator = GetIt.instance;
 
 Future<void> setupLocator() async {
-  // Initialize ApiClient
+  // Core layer
   locator.registerLazySingleton<ApiClient>(
     () => ApiClient(baseUrl: EnvironmentConfig.baseUrl),
   );
