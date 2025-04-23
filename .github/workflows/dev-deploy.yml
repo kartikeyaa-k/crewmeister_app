@@ -1,0 +1,40 @@
+name: 🚀 Build & Deploy APK + Web
+
+on:
+  push:
+    branches: [dev]
+
+jobs:
+  build_and_deploy:
+    name: 🔄 Build APK & Deploy Web
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🧾 Checkout Code
+        uses: actions/checkout@v3
+
+      - name: 🛠 Set Up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.29.3"
+
+      - name: 📦 Install Dependencies
+        run: flutter pub get
+
+      - name: 📱 Build APK
+        run: flutter build apk --dart-define=BASE_URL=${{ vars.BASE_URL }}
+
+      - name: 🌐 Build Web
+        run: flutter build web --dart-define=BASE_URL=${{ vars.BASE_URL }}
+
+      - name: 📤 Upload APK Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: crewmeister_app_apk
+          path: build/app/outputs/flutter-apk/app-release.apk
+
+      - name: 🚀 Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: build/web
