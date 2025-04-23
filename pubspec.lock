@@ -4,9 +4,11 @@ packages:
   absence_manager:
     dependency: "direct main"
     description:
-      path: "package/absence_manager"
-      relative: true
-    source: path
+      path: "."
+      ref: prod
+      resolved-ref: "82dc6ebb6f1ae00b8f8b8bce77dbcfcfeced701f"
+      url: "https://github.com/kartikeyaa-k/absence_manager.git"
+    source: git
     version: "0.0.1"
   async:
     dependency: transitive
@@ -59,9 +61,11 @@ packages:
   crewmeister_core:
     dependency: "direct main"
     description:
-      path: "package/crewmeister_core"
-      relative: true
-    source: path
+      path: "."
+      ref: prod
+      resolved-ref: "62c18eebf6140b9db6d0b6a9b5d89dd4526ce9b0"
+      url: "https://github.com/kartikeyaa-k/crewmeister_core.git"
+    source: git
     version: "0.0.1"
   crypto:
     dependency: transitive

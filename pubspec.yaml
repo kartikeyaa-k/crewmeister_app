@@ -13,11 +13,15 @@ dependencies:
   flutter_bloc: 9.1.0
   intl: 0.20.2
 
-  # Local pacakges will be moved to git
   crewmeister_core:
-    path: ./package/crewmeister_core
+    git:
+      url: https://github.com/kartikeyaa-k/crewmeister_core.git
+      ref: prod
+
   absence_manager:
-    path: ./package/absence_manager
+    git: 
+      url : https://github.com/kartikeyaa-k/absence_manager.git
+      ref: prod
 
   
 
