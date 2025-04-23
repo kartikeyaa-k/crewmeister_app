@@ -12,6 +12,7 @@ analyzer:
     missing_return: error
     dead_code: error
     todo: ignore
+    do_not_use_environment: ignore
 
   exclude:
     - '**.freezed.dart'

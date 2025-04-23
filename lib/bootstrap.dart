@@ -1,5 +1,5 @@
 import 'dart:async';
-
+import 'package:intl/date_symbol_data_local.dart';
 import 'package:crewmeister_app/service_locator.dart';
 import 'package:flutter/material.dart';
 
@@ -10,6 +10,9 @@ Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
   await runZonedGuarded(
     () async {
       WidgetsFlutterBinding.ensureInitialized();
+
+      await initializeDateFormatting('en');
+
       await setupLocator();
 
       await locator.allReady().then((value) async {
