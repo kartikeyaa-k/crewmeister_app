@@ -2,8 +2,9 @@ name: 🚀 Build & Deploy APK + Web
 
 on:
   push:
-    branches:
-      - prod
+    branches: [prod]
+    tags:
+      - 'v*.*.*'
 
 jobs:
   build_and_deploy:
