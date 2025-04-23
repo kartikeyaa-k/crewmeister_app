@@ -2,7 +2,8 @@ name: 🚀 Build & Deploy APK + Web
 
 on:
   push:
-    branches: [dev]
+    branches:
+      - prod
 
 jobs:
   build_and_deploy:
