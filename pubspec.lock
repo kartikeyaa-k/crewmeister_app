@@ -5,11 +5,11 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: prod
-      resolved-ref: "82dc6ebb6f1ae00b8f8b8bce77dbcfcfeced701f"
+      ref: "99bfb1afae7eb10fd9b83d43628d91061ef29342"
+      resolved-ref: "99bfb1afae7eb10fd9b83d43628d91061ef29342"
       url: "https://github.com/kartikeyaa-k/absence_manager.git"
     source: git
-    version: "0.0.1"
+    version: "0.0.2"
   async:
     dependency: transitive
     description:
