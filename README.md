@@ -16,6 +16,7 @@ This Flutter app ties together all internal packages—including absence_manager
 
 👉 [**View Live App**](https://kartikeyaa-k.github.io/crewmeister_app/)
 
+Please use chrome for better compatibility.
 Hosted via GitHub Pages, built with `flutter build web --base-href=/crewmeister_app/`
 
 ## 🚀 Continuous Integration & Deployment
