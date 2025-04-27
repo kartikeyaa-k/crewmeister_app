@@ -4,13 +4,17 @@ The central entrypoint for the Crewmeister application.
 This Flutter app ties together all internal packages—including absence_manager as the feature module and crewmeister_core for shared utilities—to deliver a modular, high-performance, and well-architected solution.
 
 ## Preview 
-![Simulator Screenshot - iPhone 15 Pro Max - 2025-04-23 at 23 40 18](https://github.com/user-attachments/assets/3317a2eb-3bc2-4fe4-ac2f-4f483f6d0cc1)
+### 📱 iOS
 
-## 📱 APK Download
+<p align="center">
+  <img src="https://github.com/kartikeyaa-k/crewmeister_app/blob/dev/assets/ios-demo.gif?raw=true" alt="iOS Demo" width="250"/>
+</p>
 
-- Go to: [Actions tab](https://github.com/kartikeyaa-k/crewmeister_app/actions)
-- Click latest run of **Build & Deploy APK + Web**
-- Download `crewmeister_app_apk` under **Artifacts**
+### 💻 Web
+
+<p align="center">
+  <img src="https://github.com/kartikeyaa-k/crewmeister_app/blob/dev/assets/web-demo.gif?raw=true" alt="Web Demo" width="700"/>
+</p>
 
 ## 🌐 Live Web App
 
@@ -18,6 +22,12 @@ This Flutter app ties together all internal packages—including absence_manager
 
 Please use chrome for better compatibility.
 Hosted via GitHub Pages, built with `flutter build web --base-href=/crewmeister_app/`
+
+## 📱 APK Download
+
+- Go to: [Actions tab](https://github.com/kartikeyaa-k/crewmeister_app/actions)
+- Click latest run of **Build & Deploy APK + Web**
+- Download `crewmeister_app_apk` under **Artifacts**
 
 ## 🚀 Continuous Integration & Deployment
 
